@@ -1,0 +1,232 @@
+*{
+
+padding: 0%;
+margin: 0;
+box-sizing: border-box;
+
+
+}
+
+.conteiner { /*CAIXA PRINCIPAL que receberá as caixas (BOX)*/
+  margin:auto; /*centralizar*/
+  display: flex; /*para transformar em blocos (FLEXIVEL)*/
+  flex-direction:row; /*DIREÇÃO DAS CAIXAS temos tambem em coluna -> column */
+  flex-wrap: wrap;  /*qdo utilizamos blocos eles ficam um do lado do outro mesmo q tenha tamanho total da tela, entao para resolver isso utilizamos o flex-wrap:wrap */
+  justify-content:center;/*alinhando os blocos na horizontal dentro do principal*/
+  align-items:center; /*alinhando os blocos na vertical */
+  width: 90%; /*Largura do principal*/
+  height:auto;
+background-color: rgb(255, 255, 255);
+  padding: 0px; /*espaço entre as caixas e o principal*/
+}
+
+.logo{
+width: 50%;
+height: 70px;
+
+}
+
+.tamanho_logo{
+width: 20%;
+height: 80px;
+border-radius: 100%;
+}
+
+.menu{
+width: 50%;
+height: 120px;
+color: #ff0000;
+
+}
+
+
+.banner{
+width: 100%;
+height: 300px;
+
+}
+
+.banner img{
+width: 100%;
+height: 100;
+
+
+
+}
+
+.tamanho_banner{
+width: 100%;
+height: 300px;
+
+
+
+}
+
+.card{
+width: 30%;
+height: auto;
+margin: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+border: 1px solid black;
+border-radius: 10px;
+background-color: #ffff;
+
+}
+
+.banner_lateral{
+width: 50%;
+height: 200px;
+background-color: antiquewhite;
+
+}
+
+.info{
+width: 50%;
+height: 200px;
+padding-right: 10%;
+text-align: right;
+}
+
+.rodape{
+width: 100%;
+height: 60px;
+background-color: rgb(219, 137, 13);
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+/*nav botoes*/
+
+nav{
+	width: 100%;
+	height: 48px;
+	
+
+}
+
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+    padding: 20px;
+}
+
+nav ul li{
+	float: left;
+        padding: 10px;
+}
+
+nav ul li a{
+	color: black;
+	text-decoration: none; /*none desativa o css */
+	padding: 15px;
+	display: block; /*transformar em blocos*/
+    font-size: 30px;
+}
+
+nav ul li a:hover{ /*evento mouse em cima do link*/
+	background-color: #e09112;
+	border-radius: 15px;
+	color: black;
+	transition: all .5s; /*efeito de transição*/
+}
+
+.zoom{
+	transition: transform 0.3s ease;
+}
+
+.zoom:hover{
+	transform: scale(1.2);
+}
+
+.bannerhover{
+height: 400px;
+width: 100%;
+background-image: url(imagens/Prancheta\ 1.png);
+background-size: cover;
+background-position: center;
+transition: backgrond-image 05s ease-in-out;
+border-radius: 5%;
+
+}
+
+.bannerhover:hover{
+background-image: url(imagens/Prancheta\ 2.png);
+}
+
+
+@media (max-width: 576px){
+body{background-color: #ff0000;
+	
+}
+
+
+}
+
+@media (max-width: 768px){
+body{background-color: #00ffc8;
+	
+}
+
+
+}
+
+@media (max-width: 992px){
+body{background-color: #e100ff;
+	
+}
+
+
+}
+
+@media screen and (min-width : 376px) {
+.boxcard {
+
+width: 50%;
+height: auto;
+float: left;
+margin: 1%;
+}
+}
+
+@media screen and (min-width : 576px) {
+.boxcard {
+
+width: 50%;
+height: auto;
+float: left;
+margin: 1%;
+}
+}
+
+@media screen and (min-width : 768px) {
+.boxcard {
+
+width: 50%;
+height: auto;
+float: left;
+margin: 1%;
+}
+}
+
+.boximagemesquerda{
+width: 100%;
+float: left;
+margin-right: 0%;
+padding: 0%;
+}
+
+.boxcard{
+width: 100%;
+float: left;
+margin-right: 0%;
+padding: 0%;
+
+
+}
