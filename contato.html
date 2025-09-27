@@ -1,87 +1,84 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>FlexBox</title> 
+    <title>FlexBox</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  
-<div class="conteiner">
-   
-        <div class="logo">
-        <img src="imagens/OIPcafe.webp"  class="tamanho_logo"  alt="">
-        </div>
-
-        <div class="menu">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Cardapio</a></li>
-                    <li><a href="cardapio.html">Cardapio</a></li>
-                    <li><a href="contato.html">Cardapio</a></li>
+<header>
+    
+     <div class="box-logo">
+       <img src="imagens/logo.webp" alt="">
 
 
-                </ul>
+     </div>
+     <div class="box-nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Imperial</a></li>
+                <li><a href="Cardapio.html">Cardapio</a></li>
+                <li><a href="Contato.html">Contato</a></li>
+            </ul>
+        </nav>
+     </div>
 
-            </nav>
-        </div>
+</header>
 <div class="form">
-    <form action="mailto:ggabzinx@gmail.com">
-      <p>  <label for="cnome">Nome:</label>
-<input type="text" name="tNome" id="cnome" size="30" maxlength="20" placeholder="Digite seu nome aqui"
-autofocus required/>
-</p><br>
+    <form action="mailto:pedrobrandaomarques@gmail.com" method="post">
 
-<p>
+        <label for="cNOME"> NOME</label> <br>
+        <input type="text" name="tNome" id="cNOME" size="20" maxlength="20" placeholder=" Digite seu nome aqui " autofocus required>
+            <br>
+         <label for="cMail"> E-mail</label><br>
+        <input type="email" name="tMail" id="cMail" size="30" maxlength="30" placeholder="Ex: exemplo@mail.com" required/>
+            <br>
+        <label for="cFone"> Telefone:</label><br>
+        <input type="text" name="tFone" id="cFone" size="15" maxlength="12">
 
-    <label for="cMail">Email:</label>
-    <input type="email" name="tmail" id="cmail" size="30" maxlength="30" placeholder="8 digitos" required />
-</p> <br>
-<p>
+        <h2>Data</h2><input type="date" name="tNasc" id="cNasc">
 
-    <label for="Csenha">Senha</label>
-    <input type="password" name="tSenha" id="cSenha" size="30" maxlength="8" placeholder="8 digitos" required />
-</p> <br>
+        <p>
+              <label for="cMsg">Mensagem</label> <br>
+              <textarea name="tMsg" id="cMsg" cols="45" rows="5" placeholder="Deixe sua mensagem aqui" style="resize: none;"></textarea>
+        </p>
 
-<p>
- <label for="cnum">Telefone</label>
-<input type="number" name="tNUm" id="cNUM" min="0" max="9999999999">
-</p> <br>
 
-<p>
-<label for="Mensagem"></label><br>
-<textarea name="tMSG" id="tMSG" cols="45" rows="5" placeholder="Deixe sua mensagem aqui" style="resize: none;"></textarea>
-
-</p><br>
-
+        <input type="submit" value="Enviar">
     </form>
 </div>
 
-   
+<div class="conteiner_terciario">
+    <div class="box_inf">
+        <div class="icons">
+            <img src="imagens/coroa.jpg" alt="">
+            <a href="">O imperial</a>
+        </div>
 
+        <div class="icons">
+            <img src="imagens/localização.jpg" alt="">
+            <a href="">Onde estamos</a>
+        </div>
 
-    
+        <div class="icons">
+            <img src="imagens/cardapio.jpg" alt="">
+            <a href="">Cardapio</a>
+        </div>
 
-
-    <div class="conteiner3">
-<img src="imagens/iconesredes.webp" alt="">
-
+        <div class="icons">
+            <img src="imagens/mesa de trabalho.jpg" alt="">
+            <a href="">Coworking</a>
+        </div>
 
     </div>
-
-    <div class="rodape">Todos os direitos reservados</div>
-
-
-
-
-
-
-</div>
-
-
-
-
- </body>
+    <div class="box_rede">
+        <img src="imagens/rede social.jpg" alt="">
+        <h1>conect-se</h1>
+    </div> 
+ </div> 
+<footer>
+    <P>Todos os direitos Reservados<span> Com  Jesus</span> - 2025</P>
+</footer>
+</body>
 </html>
